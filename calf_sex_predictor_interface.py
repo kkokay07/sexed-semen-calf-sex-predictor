@@ -11,7 +11,7 @@ target_encoder = joblib.load("target_encoder.pkl")
 data = pd.read_csv("data_cs.txt", sep="\t")
 
 st.title("🐮 Calf Sex Prediction Tool")
-st.write("Select input features such as breed, parity, management system and semen type to predict calf sex (Male/Female). R&D by Soumen Naskar's lab, ICAR-Indian Institute of Agricultural Biotechnology, Ranchi")
+st.write("Select input features such as breed, parity, management system and semen type to predict calf sex (Male/Female). R&D by Dr. Soumen Naskar's lab, ICAR-Indian Institute of Agricultural Biotechnology, Ranchi")
 
 # Dropdown inputs
 breed = st.selectbox("Select Breed", sorted(data["Breed"].unique()))
